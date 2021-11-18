@@ -12,6 +12,9 @@ import { About, Description, Image } from "../syles";
 const ServicesSection = () => {
   return (
     <Services>
+      <Image>
+        <img src={home2} alt="camera" />
+      </Image>
       <Description>
         <h2>
           High <span>quality</span> services
@@ -47,9 +50,6 @@ const ServicesSection = () => {
           </Card>
         </Cards>
       </Description>
-      <Image>
-        <img src={home2} alt="camera" />
-      </Image>
     </Services>
   );
 };
