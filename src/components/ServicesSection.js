@@ -7,7 +7,7 @@ import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 //Styles
 import styled from "styled-components";
-import { About, Description, Image } from "../syles";
+import { About, Description, Image } from "../styles";
 import { scrollReveal } from "../animation";
 import { useScroll } from "./useScroll";
 
@@ -70,11 +70,19 @@ const Services = styled(About)`
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  @media (max-width: 1300px) {
+    h2 {
+      padding: 2rem 1rem;
+    }
+  }
 `;
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
 `;
 
 const Card = styled.div`
@@ -89,6 +97,10 @@ const Card = styled.div`
       padding: 1rem;
     }
   }
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export default ServicesSection;

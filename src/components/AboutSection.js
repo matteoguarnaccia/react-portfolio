@@ -1,7 +1,7 @@
 import React from "react";
 import home1 from "../img/home1.png";
 //Styled
-import { About, Description, Image, Hide } from "../syles";
+import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
