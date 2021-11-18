@@ -8,10 +8,18 @@ import home2 from "../img/home2.png";
 //Styles
 import styled from "styled-components";
 import { About, Description, Image } from "../syles";
+import { scrollReveal } from "../animation";
+import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Services>
+    <Services
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <Image>
         <img src={home2} alt="camera" />
       </Image>
